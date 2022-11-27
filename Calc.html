@@ -7,14 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор</title>
     <script>
-        const operator = prompt("Choose operation: (add, sub, mul, div)");
+        function Add(a, b) {
+            return a + b;
+        }
+
+        function Sub(a, b) {
+            return a - b;
+        }
+
+        function Mul(a, b) {
+            return a * b;
+        }
+
+        function Div(a, b) {
+            return a / b;
+        }
         const firstNum = +(prompt("Enter first number:"));
         const secondNum = +(prompt("Enter second number:"));
-        const resultPlus = firstNum + secondNum;
-        const resultMinus = firstNum - secondNum;
-        const resultMul = firstNum * secondNum;
-        const resultDiv = firstNum / secondNum;
-        alert(result);
+        alert("Addition: " + firstNum + "+" + secondNum + "=" + Add(firstNum, secondNum));
+        alert("Subtraction: " + firstNum + "-" + secondNum + "=" + Sub(firstNum, secondNum));
+        alert("Multiplication: " + firstNum + "*" + secondNum + "=" + Mul(firstNum, secondNum));
+        alert("Division: " + firstNum + "/" + secondNum + "=" + Div(firstNum, secondNum));
     </script>
 </head>
 
